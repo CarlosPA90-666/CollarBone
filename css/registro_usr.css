@@ -1,0 +1,19 @@
+body{
+    background-image: url(../img/bg.png);
+}
+.card{
+    margin: auto;
+    margin-top: 10%;
+    width: 50%;
+    padding: 10px 10px;
+}
+.form-control{
+    margin-bottom: 7px;
+}
+#box_btn{
+    /* border: solid 1px yellow; */
+    text-align: center;
+}
+#btn{
+    padding: 3px 17px;
+}
