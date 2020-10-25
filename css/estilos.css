@@ -17,7 +17,7 @@ h1 :hover{
     text-align: center;
     width: 100%;
 }
-#tl1{
+.tl1{
     font-size: 150px;
     background: none;
     color: white;
@@ -27,6 +27,9 @@ h1 :hover{
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+#arrow{
+    margin-top: 15%;
 }
 #menu li a:hover {
     font-weight: 700;
