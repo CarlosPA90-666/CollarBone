@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    text-decoration: none;
+}
+h1 :hover{
+    color: rgb(176, 140, 224);
+}
+#inicio{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+#tl1{
+    font-size: 130px;
+    background: none;
+    color: white;
+    font-family: 'Playball', cursive;
+    position: absolute;
+    text-shadow: -4px 3px 0 black,-5px 4px 0 rgb(176, 140, 224) ;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#menu{
+    background-color: black;
+}
+#menu li a:hover {
+    font-weight: 700;
+    margin-top: -2;
+    padding-bottom: 12px;
+    color: rgb(176, 140, 224);
+}
+#box4{
+    
+    color: aliceblue;
+}
+#pregal{
+    text-align: center;
+    font-family: 'Playball', cursive;
+    color: aliceblue;
+    font-size: 50px;
+    margin: 2%;
+}
+table {
+    margin: auto;
+    width: 60%;
+    border:5px solid rgb(0, 0, 0);
+    border-radius: 9px;
+
+ }
+ th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border:3px solid rgb(0, 0, 0);
+
+ }
+ .linkc{
+    transition:all 0.2s ease-in;
+    opacity: 1;
+    filter:alpha(opacity(10))
+ }
+.linkc :hover{
+    transition:all 0.2s ease-out;
+    opacity: 0.8;
+    filter:alpha(opacity(8))
+}

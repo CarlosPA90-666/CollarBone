@@ -1,0 +1,77 @@
+footer{
+    background-color: rgb(0, 0, 0);
+    border-top: aliceblue 3px solid;
+    border-radius: 5px;
+    margin-top: 10%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-family: 'Playball', cursive;   
+}
+.container-footer-all{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+}
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h1{
+    font-size: 50px;
+}
+
+.colum1 p{
+    font-size: 1px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.colum2{
+    max-width: 500px;
+    
+}
+
+.colum2 h1{
+    font-size: 50px;
+}
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: rgb(255, 254, 254);
+}
+.footer{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px;
+}
+.copyright{
+    color: rgb(255, 253, 253);
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+}
