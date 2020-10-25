@@ -18,6 +18,9 @@ body{
     padding: 3px 17px;
 }
 #btna{
+    color: black;
+    margin: auto;
+    margin-top: 2%;
     padding: 7px 15px;
     text-align: center;
 }
