@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(../img/bck1.jpg);
+}
+
+h1 :hover {
+  color: rgb(151, 10, 10);
+  }
+#menu li a:hover {
+  font-weight: 700;
+  margin-top: -2;
+  padding-bottom: 12px;
+  color: rgb(151, 10, 10);
+}
+#formbox {
+  background: white;
+  border-radius: 5px;
+  font-family: "Istok Web", sans-serif;
+  margin: auto;
+  margin-top: 3%;
+  padding: 20px 20px;
+  width: 50%;
+}
+#formt {
+  color: aliceblue;
+  font-family: "Playball", cursive;
+  font-size: 52px;
+  margin-top: 3%;
+  text-align: center;
+}
+.simple,
+.txtarea,
+.opc {
+  border: 0;
+  border-bottom: 2px solid rgb(170, 170, 170);
+  border-radius: 3px;
+  font-family: "Istok Web", sans-serif;
+  width: 48%;
+}
+.opc {
+  margin-top: 30px;
+}
+.txtarea {
+  margin-top: 40px;
+  width: 100%;
+}
+#btnenviar {
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  font-family: "Istok Web", sans-serif;
+  margin-left: 45%;
+  margin-top: 10px;
+  padding: 7px 15px;
+  border: 1px solid red;
+}
+h2{
+  text-shadow: -4px 3px 0 black,-5px 4px 0 rgb(214, 10, 10) ;
+}
