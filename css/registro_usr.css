@@ -17,6 +17,9 @@ body{
 #btn{
     padding: 3px 17px;
 }
+#cntobtna{
+    text-align: center;
+}
 #btna{
     background-color: black;
     margin: auto;
