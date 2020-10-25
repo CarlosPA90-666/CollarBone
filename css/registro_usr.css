@@ -18,12 +18,12 @@ body{
     padding: 3px 17px;
 }
 #cntobtna{
+    margin: auto;
+    margin-top: 2%;
     text-align: center;
 }
 #btna{
     background-color: black;
-    margin: auto;
-    margin-top: 2%;
     padding: 7px 15px;
 }
 #btna:hover{
