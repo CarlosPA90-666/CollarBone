@@ -18,11 +18,10 @@ body{
     padding: 3px 17px;
 }
 #btna{
-    color: black;
+    background-color: black;
     margin: auto;
     margin-top: 2%;
     padding: 7px 15px;
-    text-align: center;
 }
 #btna:hover{
     background-color: rgb(218, 188, 19);
