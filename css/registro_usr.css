@@ -17,11 +17,11 @@ body{
 #btn{
     padding: 3px 17px;
 }
-.btna{
+#btna{
     padding: 7px 15px;
     text-align: center;
 }
-.btna:hover{
+#btna:hover{
     background-color: rgb(218, 188, 19);
     color: black;
 }
