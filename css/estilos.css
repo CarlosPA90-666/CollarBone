@@ -7,6 +7,9 @@
 #index{
     background-color: black;
 }
+a:hover{
+    text-decoration: none;
+}
 h1{
     font-family: 'Playball', cursive;
     background-color: black;
