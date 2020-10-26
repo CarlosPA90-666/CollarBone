@@ -89,6 +89,15 @@ function mostrarEliminarCamisetas(){
 
 }
 
+function mostrarNada(){
+
+         document.getElementById('CrearCamiseta').style.display="none";
+         document.getElementById('ModificarCamiseta').style.display="none";
+         document.getElementById('BuscarCamiseta').style.display="none";
+         document.getElementById('EliminarCamiseta').style.display="none";
+
+}
+
 
 function Salir(){
 	location.replace("InicioSesion.html");
@@ -128,7 +137,7 @@ $("#buttonHorarios").click(function(){
 
 $("#buttonLogin").click(function(){
 
-        mostrarEliminarCamisetas();
+        mostrarNada();
 
 });
 
