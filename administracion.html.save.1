@@ -123,7 +123,7 @@
                 </div>
 		<br>
 		
-            <form action="Python/usrbd.py" method="PUT">
+            <form action="Python/usrbd.py" method="POST">
                 <input type="text" name="NombreCamiseta" class="form-control" placeholder="Nombre Camiseta" aria-label="nombre" aria-describedby="basic-addon1">
                 <input type="number" name="NumeroCamisetasDisponibles" class="form-control" placeholder="Número de Camisetas Disponibles" aria-label="nombre" aria-des$>
                 <input type="text" name="TallasDisponibles" class="form-control" placeholder="Tallas Disponibles" aria-label="nombre" aria-describedby="basic-addon1">
@@ -131,7 +131,7 @@
                 <input type="text" name="ImagenCamiseta" class="form-control" placeholder="URL Imagen Camiseta" aria-label="password" aria-describedby="basic-addon1">
                 <br>
                 <div id="box_btn">
-                    <input type="submit" value="Modificar"  class="btn btn-primary" id="btnmodcam">
+                    <input type="submit" value="Ingresar"  class="btn btn-primary" id="btnmodcam">
                 </div>
             </form>
         </div>
@@ -141,11 +141,10 @@
 <!------------------------------------------------MODIFICAR CAMISETA------------------------------------------------>
 
 <!------------------------------------------------BUSCAR CAMISETA------------------------------------------------>
-	 <div id="BuscarCamiseta">
+	<div id="BuscarCamiseta">
                 <div class="card">
         <h5 class="card-header">Buscar Camiseta</h5>
         <div class="card-body">
-            <h5 class="card-title">Camisetas En Exposición:</h5>
                 <div>
                 <select id="nomscam">
                         <option value>Nombres</option>
@@ -154,48 +153,22 @@
                 </div>
                 <br>
 
-            <form action="Python/usrbd.py" method="GET">
-		<h5>Nombre Camiseta</h5>
-                <input type="text" name="NombreCamiseta" class="form-control" placeholder="Nombre Camiseta" aria-label="nombre" aria-describedby="basic-addon1" disabled>
-		<h5>Camisetas Disponibles</h5>
-                <input type="number" name="NumeroCamisetasDisponibles" class="form-control" placeholder="Número de Camisetas Disponibles" aria-label="nombre" aria-des$ disabled>
-		<h5>Tallas Disponibles</h5>
-                <input type="text" name="TallasDisponibles" class="form-control" placeholder="Tallas Disponibles" aria-label="nombre" aria-describedby="basic-addon1" disabled>
-		<h5>Precio Camiseta (COP)</h5>
-                <input type="number" name="PrecioCamiseta" class="form-control" placeholder="Precio (COP)" aria-label="nombre" aria-describedby="basic-addon1" disabled>
-		<h5>URL Camiseta</h5>
-                <input type="text" name="ImagenCamiseta" class="form-control" placeholder="URL Imagen Camiseta" aria-label="password" aria-describedby="basic-addon1" disabled>
-                </div>
-            </form>
-        </div>
-      </div>
-        </div>
-<!------------------------------------------------BUSCAR CAMISETA------------------------------------------------>
-
-<!------------------------------------------------ELIMINAR CAMISETA------------------------------------------------>
-	<div id="EliminarCamiseta">
-                <div class="card">
-        <h5 class="card-header">Eliminar Camiseta</h5>
-        <div class="card-body">
-            <h5 class="card-title">Camiseta A Eliminar:</h5>
-
-            <form action="Python/usrbd.py" method="DELETE">
-                <div>
-                <select id="nomscam">
-                        <option value>Nombres</option>
-                </select>
-                </div>
+            <form action="Python/usrbd.py" method="POST">
+                <input type="text" name="NombreCamiseta" class="form-control" placeholder="Nombre Camiseta" aria-label="nombre" aria-describedby="basic-addon1">
+                <input type="number" name="NumeroCamisetasDisponibles" class="form-control" placeholder="Número de Camisetas Disponibles" aria-label="nombre" aria-des$>
+                <input type="text" name="TallasDisponibles" class="form-control" placeholder="Tallas Disponibles" aria-label="nombre" aria-describedby="basic-addon1">
+                <input type="number" name="PrecioCamiseta" class="form-control" placeholder="Precio (COP)" aria-label="nombre" aria-describedby="basic-addon1">
+                <input type="text" name="ImagenCamiseta" class="form-control" placeholder="URL Imagen Camiseta" aria-label="password" aria-describedby="basic-addon1">
                 <br>
-		<input type="submit" value="Eliminar"  class="btn btn-primary" id="btnelicam">
-
+                <div id="box_btn">
+                    <input type="submit" value="Ingresar"  class="btn btn-primary" id="btnmodcam">
+                </div>
             </form>
         </div>
       </div>
         </div>
 
-<!------------------------------------------------ELIMINAR CAMISETA------------------------------------------------>
-
-
+<!------------------------------------------------BUSCAR CAMISETA------------------------------------------------>
 	<script type="text/javascript" src="js/myjs.js"></script>
 
 </body>
