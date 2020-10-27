@@ -36,7 +36,6 @@ print('<div class="card"> <h5 class="card-header"><i>Collarbone</i></h5> <div cl
 if (tem):
     sql = ("insert into usuarios values ('{}','{}','{}','{}')".format(nombre,apellido,correo,cripsw))
     cur.execute(sql)
-    cnx.commit()
     print('<h7> Bienvenido <b>{}</b> ya eres parte de  <i>Collarbone.</i></h7>'.format(nombre))
     print('<div id = "contbtna"><a href="/CollarBone/index.html" id = "btna" class="badge badge-dark"> Ver camisetas!</a></div>')
 else:

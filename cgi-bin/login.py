@@ -18,18 +18,20 @@ password = data.getvalue('password')
 cnx = mysql.connector.connect (user='aclr', password = '1010029624', database='Collarbone', host='127.0.0.1')
 cur = cnx.cursor()
 
-cur.execute('select password_ from usuarios where correo = {}'.format(correo))
-tem = False
+sql = ("select * from usuarios where correo = '{}' and password_ = SHA('{}')  ".format(correo,password))
+cur.execute(sql)
+usrcheck = cur.fetchall()
 nombre = ":p"
-for i in cur:
-    if password in i:
-        sql = ("select nombre from usuarios where correo = {}".format(correo))
-        cur.execute(sql)
-        tem = True
-        find = cur.fetchall()
-        for row in find:
-            nombre = row[0]
 
+if usrcheck:
+    sql = ("select nombre from usuarios where correo = {}".format(correo))
+    cur.execute(sql)
+    find = cur.fetchall()
+    for row in find:
+        nombre = row[0]
+    sql = ("select * from administrador where correo = {}".format(correo))
+    cur.execute(sql)
+    admin = cur.fetchall() 
 
 print('Content-Type: text/html')
 print('')
@@ -38,7 +40,10 @@ print('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3
 print('<link rel="stylesheet" href="/CollarBone/css/registro_usr.css">')
 print('<div class="card"> <h5 class="card-header"><i>Collarbone</i></h5> <div class="card-body">')
 
-if (tem):
+if(admin):
+    print('<h7> Bienvenido de nuevo <b>Admin. {}</b> a <i>Collarbone.</i></h7>'.format(nombre))
+    print('<a href="/CollarBone/administracion.html" class="badge badge-dark">Vamos!</a>')
+elif (usrcheck):
     print('<h7> Bienvenido de nuevo <b>{}</b> a <i>Collarbone.</i></h7>'.format(nombre))
     print('<a href="/CollarBone/index.html" class="badge badge-dark"> Ver camisetas!</a>')
 else:
