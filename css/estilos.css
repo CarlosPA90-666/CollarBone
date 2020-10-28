@@ -38,7 +38,7 @@ h1 :hover{
     margin-top: 15%;
 }
 #arrow1{
-    font-size: 30px;
+    font-size: 50px;
 }
 #menu li a:hover {
     font-weight: 700;
@@ -80,15 +80,22 @@ table {
 }
 #update{
     margin: auto;
-    margin-top: 2%;
+    margin: 2% 0;
     text-align: center;
 }
 #btnupd{
-    background-color: black;
-}
-#btnupd:hover{
     background-color: rgb(218, 188, 19);
+    border-radius: 7px;
     color: black;
+    font-weight: bold;
+    border:2px solid rgb(218, 188, 19);
 }
 
+#btnupd:hover{
+    background-color: black;
+    font-weight: bold;
+    color: rgb(218, 188, 19);
+
+   
+}
  

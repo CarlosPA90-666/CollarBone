@@ -9,6 +9,13 @@ create table usuarios (
     primary key (correo)
 );
 
+create table administrador (
+	id int auto_increment,
+    correo varchar(49) not null,
+    primary key (id),
+    FOREIGN KEY (correo) REFERENCES usuarios(correo) 
+);
+
 create table camisetas(
 Nombre varchar(40),
 NumeroDisponible int,
@@ -17,29 +24,21 @@ Precio double,
 URLImagen varchar(200)
 );
 
+INSERT INTO camisetas values ('Worlds Parallels', 15, 'M', 46000 ,'https://www.mattelsa.net/media/catalog/product/cache/1/small_image/657x/17f82f742ffe127f42dca9de82fb58b1/5/1/51797-1.jpg');
+INSERT INTO camisetas values ('Free Board', 15, 'M', 46000 ,'https://www.mattelsa.net/media/catalog/product/cache/1/small_image/657x/17f82f742ffe127f42dca9de82fb58b1/5/2/52591-1.jpg');
+INSERT INTO camisetas values ('My livE', 15, 'M', 46000 ,'https://www.mattelsa.net/media/catalog/product/cache/1/small_image/657x/17f82f742ffe127f42dca9de82fb58b1/5/1/51799-1.jpg');
+INSERT INTO camisetas values ('Only Black', 15, 'M', 40000 ,'https://www.mattelsa.net/media/catalog/product/cache/1/small_image/657x/17f82f742ffe127f42dca9de82fb58b1/4/5/45754-2.jpg');
+INSERT INTO camisetas values ('Thug Dog', 15, 'M', 46000 ,'https://www.mattelsa.net/media/catalog/product/cache/1/small_image/657x/17f82f742ffe127f42dca9de82fb58b1/4/7/47923-1.jpg');
+INSERT INTO camisetas values ('Box On', 15, 'M', 46000 ,'https://www.mattelsa.net/media/catalog/product/cache/1/small_image/657x/17f82f742ffe127f42dca9de82fb58b1/4/9/49056-1.jpg');
 
-create table administrador (
-	id int auto_increment,
-    correo varchar(49) not null,
-    primary key (id),
-    FOREIGN KEY (correo) REFERENCES usuarios(correo) 
-);
+INSERT INTO camisetas values ('Space Happines', 15, 'M', 46000 ,'https://www.mattelsa.net/media/catalog/product/cache/1/small_image/657x/17f82f742ffe127f42dca9de82fb58b1/5/1/51798-1.jpg');
+INSERT INTO camisetas values ('Rebel Black', 15, 'M', 46000 ,'https://www.mattelsa.net/media/catalog/product/cache/1/small_image/657x/17f82f742ffe127f42dca9de82fb58b1/3/8/38904-3.jpg');
+INSERT INTO camisetas values ('Street Rat', 15, 'M', 46000 ,'https://www.mattelsa.net/media/catalog/product/cache/1/small_image/415x/05e17a266b0e9cc26fb81a2e0bed7e78/5/1/51796-1.jpg');
 
-create table camisetas (
-	nombre varchar (40) not null,
-    imagen varchar (280) not null,
-	des varchar (90) not null,
-    primary key (nombre)
-);
 
-select password_ from usuarios where correo = 'andrescamilolr@gmail.com';
+drop table camisetas;
 
-drop table camisetas ;
-INSERT INTO `Collarbone`.`camisetas` (`nombre`, `imagen`, `des`) values ('Worlds Parallels', 'https://www.mattelsa.net/media/catalog/product/cache/1/small_image/657x/17f82f742ffe127f42dca9de82fb58b1/5/1/51797-1.jpg', 'Camiseta manga larga negra con ilustracsión blanca en espalda, pecho y mangas');
-select * from camisetas;
-select imagen from camisetas where imagen = 'https://www.mattelsa.net/media/catalog/product/cache/1/small_image/657x/17f82f742ffe127f42dca9de82fb58b1/5/1/51797-1.jpg';
 select * from usuarios;
-DELETE FROM `Collarbone`.`usuarios` WHERE (`correo` = 'andrescamilolr@gmail.com');
-
-select * from administrador;
+select * from camisetas;
+SELECT COUNT(URLImagen) FROM camisetas;
 
