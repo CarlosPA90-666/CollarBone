@@ -9,6 +9,14 @@ create table usuarios (
     primary key (correo)
 );
 
+create table camisetas(
+Nombre varchar(40),
+NumeroDisponible int,
+TallasDisponibles varchar(40),
+Precio double,
+URLImagen varchar(200)
+);
+
 
 create table administrador (
 	id int auto_increment,

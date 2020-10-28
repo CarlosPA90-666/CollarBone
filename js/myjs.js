@@ -32,6 +32,7 @@ function main(){
 	});
 
 };
+ // Inicialización de la  aplicación web
 
 function home(){
 
@@ -53,6 +54,8 @@ function home(){
 
 }
 
+//Función para mostrar formulario de creación de camisetas
+
 function mostrarCrearCamisetas(){
 
 	 document.getElementById('CrearCamiseta').style.display="block";
@@ -62,6 +65,8 @@ function mostrarCrearCamisetas(){
 
 }
 
+//Función para mostrar formulario de Modificación de camisetas
+
 function mostrarModificarCamisetas(){
 
          document.getElementById('CrearCamiseta').style.display="none";
@@ -70,7 +75,7 @@ function mostrarModificarCamisetas(){
          document.getElementById('EliminarCamiseta').style.display="none";
 
 }
-
+//Función para mostrar formulario de busqueda de camisetas
 function mostrarBuscarCamisetas(){
 
          document.getElementById('CrearCamiseta').style.display="none";
@@ -79,6 +84,8 @@ function mostrarBuscarCamisetas(){
          document.getElementById('EliminarCamiseta').style.display="none";
 
 }
+
+//Función para mostrar formulario de Eliminación de camisetas
 
 function mostrarEliminarCamisetas(){
 
@@ -89,6 +96,8 @@ function mostrarEliminarCamisetas(){
 
 }
 
+//Función para Inicio
+
 function mostrarNada(){
 
          document.getElementById('CrearCamiseta').style.display="none";
@@ -98,10 +107,13 @@ function mostrarNada(){
 
 }
 
+// Función para retornar a inicio de sesión 
 
 function Salir(){
 	location.replace("InicioSesion.html");
 }
+
+//Movimiento de interacción de Botones 
 
 $("#buttonSalir").click(function(){
 
