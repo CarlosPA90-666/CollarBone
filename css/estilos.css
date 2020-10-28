@@ -71,12 +71,12 @@ table {
 .linkc{
     transition:all 0.2s ease-in;
     opacity: 1;
-    filter:alpha(opacity(10))
+    filter:alpha(opacity(10));
  }
 .linkc :hover{
     transition:all 0.2s ease-out;
     opacity: 0.8;
-    filter:alpha(opacity(8))
+    filter:alpha(opacity(8));
 }
 #update{
     margin: auto;
@@ -95,7 +95,5 @@ table {
     background-color: black;
     font-weight: bold;
     color: rgb(218, 188, 19);
-
-   
 }
  
