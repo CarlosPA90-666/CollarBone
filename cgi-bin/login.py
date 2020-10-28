@@ -1,14 +1,6 @@
-
 #!/usr/bin/python3
-import hashlib
-import base64
 import mysql.connector
 import cgi
-
-def encript (txt):
-    newpassword = hashlib.sha1(txt.encode()).digest()
-    encriptado = base64.b64encode(newpassword).decode('UTF-8')
-    return encriptado
 
 data = cgi.FieldStorage()
 
@@ -22,6 +14,7 @@ sql = ("select * from usuarios where correo = '{}' and password_ = SHA('{}')  ".
 cur.execute(sql)
 usrcheck = cur.fetchall()
 nombre = ":p"
+admin = False
 
 if usrcheck:
     sql = ("select nombre from usuarios where correo = {}".format(correo))
@@ -29,8 +22,9 @@ if usrcheck:
     find = cur.fetchall()
     for row in find:
         nombre = row[0]
-    sql = ("select * from administrador where correo = {}".format(correo))
-    cur.execute(sql)
+    usrcheck = True
+    sql2 = ("select * from administrador where correo = {}".format(correo))
+    cur.execute(sql2)
     admin = cur.fetchall() 
 
 print('Content-Type: text/html')
@@ -47,13 +41,7 @@ elif (usrcheck):
     print('<h7> Bienvenido de nuevo <b>{}</b> a <i>Collarbone.</i></h7>'.format(nombre))
     print('<a href="/CollarBone/index.html" class="badge badge-dark"> Ver camisetas!</a>')
 else:
-    print('<h7>El correo o la contraseña ingresados no existen.</h7>')
+    print('<h7>El correo o el password ingresados no existen.</h7>')
     print('<a href="/CollarBone/registro_usr.html" class="badge badge-dark"> ¿Registrarse?</a>')
 cnx.close()
 print('</div></div>')
-
-
-
-
-
-
