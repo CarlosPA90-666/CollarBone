@@ -21,7 +21,7 @@
 <body>
 
 
-	<div id="sidemenu" class="menu-collapsed">
+	<div id="sidemenu" class="menu-collapsed"> <!--Menu desplegable-->
 		<div id="header">
 			<div id="title">
 				<span>CollarBone</span>
@@ -44,7 +44,7 @@
 		</div>
 		<div id="menu-items">
 			<div class="item">
-
+<!--Interacciones deadministracion-->
 				<div class="icon"><img src="img/Home.png"></div>
 				<button id="buttonLogin" name="ButtonLogin" class="buttonI">Inicio</button>
 			</div>
@@ -92,7 +92,7 @@
         <h5 class="card-header">Crear Camiseta</h5>
         <div class="card-body">
             <h5 class="card-title">Ingresa los siguientes datos:</h5>
-            <form action="Python/usrbd.py" method="POST">
+            <form action="cgi-bin/CrearCamiseta.py" method="POST">
                 <input type="text" name="NombreCamiseta" class="form-control" placeholder="Nombre Camiseta" aria-label="nombre" aria-describedby="basic-addon1">
                 <input type="number" name="NumeroCamisetasDisponibles" class="form-control" placeholder="Número de Camisetas Disponibles" aria-label="nombre" aria-describedby="basic-addon1">
                 <input type="text" name="TallasDisponibles" class="form-control" placeholder="Tallas Disponibles" aria-label="nombre" aria-describedby="basic-addon1">
