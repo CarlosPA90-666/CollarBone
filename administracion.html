@@ -92,7 +92,7 @@
         <h5 class="card-header">Crear Camiseta</h5>
         <div class="card-body">
             <h5 class="card-title">Ingresa los siguientes datos:</h5>
-            <form action="cgi-bin/CrearCamiseta.py" method="POST">
+            <form action="/cgi-bin/CrearCamiseta.py" method="POST">
                 <input type="text" name="NombreCamiseta" class="form-control" placeholder="Nombre Camiseta" aria-label="nombre" aria-describedby="basic-addon1">
                 <input type="number" name="NumeroCamisetasDisponibles" class="form-control" placeholder="Número de Camisetas Disponibles" aria-label="nombre" aria-describedby="basic-addon1">
                 <input type="text" name="TallasDisponibles" class="form-control" placeholder="Tallas Disponibles" aria-label="nombre" aria-describedby="basic-addon1">
@@ -194,6 +194,30 @@
         </div>
 
 <!------------------------------------------------ELIMINAR CAMISETA------------------------------------------------>
+
+<!------------------------------------------------ELIMINAR CAMISETA------------------------------------------------>
+        <div id="prueba">
+                <div class="card">
+        <h5 class="card-header">Eliminar Camiseta</h5>
+        <div class="card-body">
+            <h5 class="card-title">Camiseta A Eliminar:</h5>
+
+            <form action="/cgi-bin/Desplegable.py">
+                <div>
+                <select id="nomscam">
+                        <option value>Nombres</option>
+                </select>
+                </div>
+                <br>
+                <input type="submit" value="Eliminar"  class="btn btn-primary" id="btnelicam">
+
+            </form>
+        </div>
+      </div>
+        </div>
+
+<!------------------------------------------------ELIMINAR CAMISETA------------------------------------------------>
+
 
 
 	<script type="text/javascript" src="js/myjs.js"></script>
