@@ -151,37 +151,25 @@
                         <select id="nomscam1">
                                 <option v-for="c in datos">{{c.nombre}}</option>
                         </select>
-                                <form action="/cgi-bin/Collarbone_BK/app.py" method="GET">
+                                <form action="" method="GET">
                                 <input type="text" id="nombreC" name="nombreCx" class="form-control" autocomplete="off" placeholder="..." aria-label="camiseta" aria-describedby="basic-addon1">
-                                <div id="box_btn">
-                                        <input type="submit" id="btn Buscarcam" value="Buscar" class="btn btn-primary" onclick="x()" @click="p()" >
-                                </div>
+                                
                                 </form>
-                        <script>
-                                /* Para obtener el texto del select */
-                                function x () {
-                                        var combo = document.getElementById("nomscam1");
-                                        var selected = combo.options[combo.selectedIndex].text;
-                                        document.getElementById('nombreC').value = selected;                                 
-                                }
-                                // document.getElementById('nombreC').style.display= "none";
-                        </script>
-                        <div v-for="c in unC">
-                                {{unC}}
-                        </div>
+                
+                        
                 </div>
                 <br>
             <form action="Python/usrbd.py" method="GET">
 		<h5>Nombre Camiseta</h5>
-                <input type="text" name="NombreCamiseta" class="form-control" placeholder="Nombre Camiseta" aria-label="nombre" aria-describedby="basic-addon1" disabled>
+                <input type="text" id="NombrecamisetaBusqueda" name="NombreCamiseta" class="form-control" placeholder="Nombre Camiseta" aria-label="nombre" aria-describedby="basic-addon1" disabled>
 		<h5>Camisetas Disponibles</h5>
-                <input type="number" name="NumeroCamisetasDisponibles" class="form-control" placeholder="Número de Camisetas Disponibles" aria-label="nombre" aria-des$ disabled>
+                <input type="number" id="NumeroCamisetasDisponiblesBusqueda" name="NumeroCamisetasDisponibles" class="form-control" placeholder="Número de Camisetas Disponibles" aria-label="nombre" aria-des$ disabled>
 		<h5>Tallas Disponibles</h5>
-                <input type="text" name="TallasDisponibles" class="form-control" placeholder="Tallas Disponibles" aria-label="nombre" aria-describedby="basic-addon1" disabled>
+                <input type="text" id="TallasDisponiblesBusqueda" name="TallasDisponibles" class="form-control" placeholder="Tallas Disponibles" aria-label="nombre" aria-describedby="basic-addon1" disabled>
 		<h5>Precio Camiseta (COP)</h5>
-                <input type="number" name="PrecioCamiseta" class="form-control" placeholder="Precio (COP)" aria-label="nombre" aria-describedby="basic-addon1" disabled>
+                <input type="number" id="PrecioCamisetaBusqueda" name="PrecioCamiseta" class="form-control" placeholder="Precio (COP)" aria-label="nombre" aria-describedby="basic-addon1" disabled>
 		<h5>URL Camiseta</h5>
-                <input type="text" name="ImagenCamiseta" class="form-control" placeholder="URL Imagen Camiseta" aria-label="password" aria-describedby="basic-addon1" disabled>
+                <input type="text" id="ImagenCamisetaBusqueda" name="ImagenCamiseta" class="form-control" placeholder="URL Imagen Camiseta" aria-label="password" aria-describedby="basic-addon1" disabled>
                 </div>
             </form>
         </div>

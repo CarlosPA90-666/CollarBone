@@ -70,6 +70,7 @@ function mostrarBuscarCamisetas () {
   document.getElementById('ModificarCamiseta').style.display = 'none'
   document.getElementById('BuscarCamiseta').style.display = 'block'
   document.getElementById('EliminarCamiseta').style.display = 'none'
+  document.getElementById('nombreC').style.display = 'none'
 }
 
 // Función para mostrar formulario de Eliminación de camisetas
