@@ -156,7 +156,7 @@
                                 <input type="text"  id="nombreC" name="nombreC" class="form-control" autocomplete="off" placeholder="..." aria-label="camiseta" aria-describedby="basic-addon1">
                         </div>
                                 <div id="box_btn">
-                                        <input type="submit" id="btn Buscarcam" value="Buscar"  class="btn btn-primary" onclick="x()"  >
+                                        <input type="submit" id="btn Buscarcam" value="Buscar" class="btn btn-primary" onclick="x()" @click="p()" >
                                 </div>
                                 </form>
                         <script>
@@ -164,7 +164,8 @@
                                 function x () {
                                         var combo = document.getElementById("nomscam1");
                                         var selected = combo.options[combo.selectedIndex].text;
-                                        document.getElementById('nombreC').value = selected;                                      
+                                        document.getElementById('nombreC').value = selected;  
+                                        alert(selected)                                    
                                 }
                                 document.getElementById('nombreC').style.display= "none";
                         </script>
