@@ -85,7 +85,6 @@ var pepe = new Vue({
         .catch((error) => {
           // eslint-disable-next-line
           console.log(error.request);
-          this.peticion()
         })
       this.clear()
     }
