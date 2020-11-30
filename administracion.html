@@ -149,11 +149,11 @@
             <h5 class="card-title">Camisetas En Exposición:</h5>
                 <div id="app">
                         <select id="nomscam ">
-                                <option value v-for="c in datos" v-model="nombreT">{{c.nombre}}</option>
+                                <option value v-for="c in datos">{{c.nombre}}</option>
                         </select>
                         <div id="hideme">
                                 <form action="/cgi-bin/Collarbone_BK/app.py" method="POST">
-                                <input type="text" id="nombreC" name="nombreC" class="form-control" autocomplete="off" placeholder="..." aria-label="camiseta" aria-describedby="basic-addon1">
+                                <input type="text"  v-model="nombreT" id="nombreC" name="nombreC" class="form-control" autocomplete="off" placeholder="..." aria-label="camiseta" aria-describedby="basic-addon1">
                                 <div id="box_btn">
                                         <input type="submit" id="btn Buscarcam" value="Buscar"  class="btn btn-primary" v-on:click="p()" >
                                 </div>
