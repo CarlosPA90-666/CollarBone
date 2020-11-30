@@ -148,13 +148,26 @@
         <div class="card-body">
             <h5 class="card-title">Camisetas En Exposición:</h5>
                 <div id="app">
-                <select id="nomscam ">
-                        <option value v-for="c in datos">{{c.nombre}}</option>
-                </select>
-                <button id="Buscarcam">Buscar</button>
+                        <select id="nomscam ">
+                                <option value v-for="c in datos">{{c.nombre}}</option>
+                        </select>
+                        <div id="hideme">
+                                <form action="/cgi-bin/Collarbone_BK/app.py" method="POST">
+                                        <script>
+                                                /* Para obtener el texto del select */
+                                                var combo = document.getElementById("nomscam");
+                                                var selected = combo.options[combo.selectedIndex].text;
+                                                alert(selected)
+                                                document.getElementById('nombreC').value = selected;
+                                        </script>
+                                <input type="text" id="nombreC" name="nombreC" class="form-control" autocomplete="off" placeholder="..." aria-label="camiseta" aria-describedby="basic-addon1">
+                                <div id="box_btn">
+                                        <input type="submit" id="btn Buscarcam" value="Buscar"  class="btn btn-primary" v-on:click="p(selected)" >
+                                </div>
+                                </form>
+                        </div>
                 </div>
                 <br>
-
             <form action="Python/usrbd.py" method="GET">
 		<h5>Nombre Camiseta</h5>
                 <input type="text" name="NombreCamiseta" class="form-control" placeholder="Nombre Camiseta" aria-label="nombre" aria-describedby="basic-addon1" disabled>
@@ -195,17 +208,6 @@
         </div>
 
 <!------------------------------------------------ELIMINAR CAMISETA------------------------------------------------>
-        <div id="app" style="background-color: aliceblue;">
-                <h4>Camisetas en Carrito</h4>
-                <ul>
-                <li v-for="c in datos"><b>{{c.nombre}}</b>
-                        <ul>Tallas: {{c.tallas}}</ul>
-                        <ul>Precio: ${{c.cantidad}}</ul>
-                        <ul>Precio: ${{c.precio}}</ul>
-                        <ul>Precio: ${{c.url}}</ul>
-                </li>
-                </ul>
-        </div>
-        <script type="text/javascript" src="js/myjs.js"></script>
+        <script src="js/myjs.js" type="text/javascript"></script>
         <script src="js/axios.js" type="text/javascript"></script>
 </body>

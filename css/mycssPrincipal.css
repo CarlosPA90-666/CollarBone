@@ -290,3 +290,7 @@ border-style: solid;
 #buttonSalir:hover{
 	background-color:#252323;
 }
+
+#hideme{
+	display: none;
+}
