@@ -155,16 +155,17 @@
                                 <form action="/cgi-bin/Collarbone_BK/app.py" method="POST">
                                 <input type="text"  v-model="nombreT" id="nombreC" name="nombreC" class="form-control" autocomplete="off" placeholder="..." aria-label="camiseta" aria-describedby="basic-addon1">
                                 <div id="box_btn">
-                                        <input type="submit" id="btn Buscarcam" value="Buscar"  class="btn btn-primary" v-on:click="p()" >
+                                        <input type="submit" id="btn Buscarcam" value="Buscar"  class="btn btn-primary" onclick="x()" v-on:click="p()" >
                                 </div>
                                 </form>
                         </div>
                         <script>
                                 /* Para obtener el texto del select */
-                                var combo = document.getElementById("nomscam");
-                                var selected = combo.options[combo.selectedIndex].text;
-                                alert(selected)
-                                document.getElementById('nombreC').value = selected;
+                                function x () {
+                                        var combo = document.getElementById("nomscam");
+                                        var selected = combo.options[combo.selectedIndex].text;
+                                        document.getElementById('nombreC').value = selected;
+                                }
                                 document.getElementById('nombreC').style.display= "none";
                         </script>
                 </div>

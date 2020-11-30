@@ -5,7 +5,8 @@ var app = new Vue({
   el: '#app',
   data: {
     datos: [],
-    unC: []
+    unC: [],
+    nombreT: ' '
   },
   methods: {
     peticion: function () {
