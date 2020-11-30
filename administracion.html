@@ -177,22 +177,23 @@
 <!------------------------------------------------ELIMINAR CAMISETA------------------------------------------------>
 	<div id="EliminarCamiseta">
                 <div class="card">
-        <h5 class="card-header">Eliminar Camiseta</h5>
-        <div class="card-body">
-            <h5 class="card-title">Camiseta A Eliminar:</h5>
-
-            <form action="Python/usrbd.py" method="DELETE">
-                <div>
-                <select id="nomscam">
-                        <option value>Nombres</option>
-                </select>
+                        <h5 class="card-header">Eliminar Camiseta</h5>
+                        <div class="card-body">
+                                <h5 class="card-title">Camiseta A Eliminar:</h5>
+                                        <div id="pepe">
+                                                <div>
+                                                        <select id="nomscam2" onclick="y()">
+                                                                <option v-for="c in datos">{{c.nombre}}</option>
+                                                        </select>
+                                                </div>
+                                                <br>
+                                                <form action="/cgi-bin/Collarbone_BK/app.py" method="POST">
+                                                <input style="display: none;" v-model="supC" type="text" id="borrarC" name="borrarC" class="form-control" autocomplete="off" placeholder="..." aria-label="camiseta" aria-describedby="basic-addon1">
+                                                <input type="submit" value="Eliminar"  class="btn btn-primary" id="btnelicam">
+                                                </form>
+                                        </div>
+                        </div>
                 </div>
-                <br>
-		<input type="submit" value="Eliminar"  class="btn btn-primary" id="btnelicam">
-
-            </form>
-        </div>
-      </div>
         </div>
 
 <!------------------------------------------------ELIMINAR CAMISETA------------------------------------------------>
