@@ -1,11 +1,14 @@
 var axios
+var datos
+var unC
 var combo
 var selected
 var app = new Vue({
   el: '#app',
   data: {
     datos: [],
-    unC: []
+    unC: [],
+    nombreT: ' '
   },
   methods: {
     peticion: function () {
@@ -30,27 +33,30 @@ var app = new Vue({
   }
 })
 
-document.getElementById('nomscam1').onchange = function () { x() }
+document.getElementById("nomscam1").onchange=function() {x()};
 
 function x () {
-  combo = document.getElementById('nomscam1')
-  selected = combo.options[combo.selectedIndex].text
-  document.getElementById('nombreC').value = selected
-  console.log(selected)
-  console.log(app.datos)
+    combo = document.getElementById("nomscam1");
+    selected = combo.options[combo.selectedIndex].text;
+    document.getElementById('nombreC').value = selected; 
+    console.log(selected)  
+    console.log(app.datos) 
 
-  for (const z of app.datos) {
-    if (z.nombre === selected) {
-      console.log(z.nombre)
-      document.getElementById('NombrecamisetaBusqueda').value = z.nombre
-      document.getElementById('NumeroCamisetasDisponiblesBusqueda').value = z.cantidad
-      document.getElementById('TallasDisponiblesBusqueda').value = z.tallas
-      document.getElementById('PrecioCamisetaBusqueda').value = z.precio
-      document.getElementById('ImagenCamisetaBusqueda').value = z.url
+    for(const x of app.datos){
+    if (x['nombre'] == selected) {
+      console.log(x['nombre']);
+      document.getElementById("NombrecamisetaBusqueda").value=x['nombre']
+      document.getElementById("NumeroCamisetasDisponiblesBusqueda").value=x['cantidad']
+      document.getElementById("TallasDisponiblesBusqueda").value=x['tallas']
+      document.getElementById("PrecioCamisetaBusqueda").value=x['precio']
+      document.getElementById("ImagenCamisetaBusqueda").value=x['url'];
     }
-  }
-}
+
+  }                             
+    }
 
 $('#btn Buscarcam').click(function () {
   x()
+ 
 })
+
