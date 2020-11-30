@@ -151,9 +151,11 @@
                         <select id="nomscam1" onclick="x()">
                                 <option v-for="c in datos">{{c.nombre}}</option>
                         </select>
-                                <form action="" method="GET">
+                                <form action="/cgi-bin/Collarbone_BK/app.py" method="POST">
                                 <input type="text" id="nombreC" name="nombreCx" class="form-control" autocomplete="off" placeholder="..." aria-label="camiseta" aria-describedby="basic-addon1">
-                                
+                                <div id="box_btn">
+                                        <input  type="submit" id="btn Buscarcam" value="Buscar" class="btn btn-primary"  v-on:click="p()" >
+                                </div>
                                 </form>
                 
                         
