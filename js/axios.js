@@ -39,14 +39,14 @@ function x () {
   console.log(selected)
   console.log(app.datos)
 
-  for (const x of app.datos) {
-    if (x.nombre === selected) {
-      console.log(x.nombre)
-      document.getElementById('NombrecamisetaBusqueda').value = x.nombre
-      document.getElementById('NumeroCamisetasDisponiblesBusqueda').value = x.cantidad
-      document.getElementById('TallasDisponiblesBusqueda').value = x.tallas
-      document.getElementById('PrecioCamisetaBusqueda').value = x.precio
-      document.getElementById('ImagenCamisetaBusqueda').value = x.url
+  for (const z of app.datos) {
+    if (z.nombre === selected) {
+      console.log(z.nombre)
+      document.getElementById('NombrecamisetaBusqueda').value = z.nombre
+      document.getElementById('NumeroCamisetasDisponiblesBusqueda').value = z.cantidad
+      document.getElementById('TallasDisponiblesBusqueda').value = z.tallas
+      document.getElementById('PrecioCamisetaBusqueda').value = z.precio
+      document.getElementById('ImagenCamisetaBusqueda').value = z.url
     }
   }
 }
