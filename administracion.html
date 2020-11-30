@@ -151,10 +151,10 @@
                         <select id="nomscam1">
                                 <option v-for="c in datos">{{c.nombre}}</option>
                         </select>
-                        <div id="hideme">
+                        <div >
                                 <form action="/cgi-bin/Collarbone_BK/app.py" method="POST">
-                                <input type="text"  id="nombreC" name="nombreC" class="form-control" autocomplete="off" placeholder="..." aria-label="camiseta" aria-describedby="basic-addon1">
-                        </div>
+                                </div>
+                                <input type="text"  id="nombreC" name="nombreCx" class="form-control" autocomplete="off" placeholder="..." aria-label="camiseta" aria-describedby="basic-addon1">
                                 <div id="box_btn">
                                         <input type="submit" id="btn Buscarcam" value="Buscar" class="btn btn-primary" onclick="x()" @click="p()" >
                                 </div>
@@ -165,9 +165,10 @@
                                         var combo = document.getElementById("nomscam1");
                                         var selected = combo.options[combo.selectedIndex].text;
                                         document.getElementById('nombreC').value = selected;  
-                                        alert(selected)                                    
+                                        alert(selected)
+                                        alert(document.getElementById('nombreC').value)                                    
                                 }
-                                document.getElementById('nombreC').style.display= "none";
+                                // document.getElementById('nombreC').style.display= "none";
                         </script>
                         <div v-for="c in unC">
                                 {{unC}}
