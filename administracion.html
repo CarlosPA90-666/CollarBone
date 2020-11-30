@@ -187,9 +187,9 @@
                                                         </select>
                                                 </div>
                                                 <br>
-                                                <form action="/cgi-bin/Collarbone_BK/app.py" method="POST">
-                                                <input style="display: none;" v-model="supC" type="text" id="borrarC" name="borrarC" class="form-control" autocomplete="off" placeholder="..." aria-label="camiseta" aria-describedby="basic-addon1">
-                                                <input type="submit" value="Eliminar"  class="btn btn-primary" id="btnelicam">
+                                                <form>
+                                                        <input style="display: none;" v-model="supC" type="text" id="borrarC" name="borrarC" class="form-control" autocomplete="off" placeholder="..." aria-label="camiseta" aria-describedby="basic-addon1">
+                                                        <input type="submit" value="Eliminar"  class="btn btn-primary" id="btnelicam" v-on:click="eliminar">
                                                 </form>
                                                 <script>
                                                         function y () {
