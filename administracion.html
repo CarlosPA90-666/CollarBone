@@ -148,12 +148,20 @@
         <div class="card-body">
             <h5 class="card-title">Camisetas En Exposición:</h5>
                 <div id="app">
-                        <select id="nomscam1">
+                        <select id="nomscam1" onclick="x()">
                                 <option v-for="c in datos">{{c.nombre}}</option>
                         </select>
+<<<<<<< HEAD
                                 <form action="" method="GET">
                                 <input type="text" id="nombreC" name="nombreCx" class="form-control" autocomplete="off" placeholder="..." aria-label="camiseta" aria-describedby="basic-addon1">
                                 
+=======
+                                <form action="/cgi-bin/Collarbone_BK/app.py" method="POST">
+                                <input type="text" id="nombreC" name="nombreCx" class="form-control" autocomplete="off" placeholder="..." aria-label="camiseta" aria-describedby="basic-addon1">
+                                <div id="box_btn">
+                                        <input  type="submit" id="btn Buscarcam" value="Buscar" class="btn btn-primary"  v-on:click="p()" >
+                                </div>
+>>>>>>> 9c8c60bb8590f20a085b6365ff2554301cc4b394
                                 </form>
                 
                         
