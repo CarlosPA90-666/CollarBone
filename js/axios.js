@@ -63,7 +63,8 @@ var pepe = new Vue({
   el: '#pepe',
   data: {
     datos: [],
-    unC: []
+    unC: [],
+    supC: ' '
   },
   methods: {
     peticion: function () {
