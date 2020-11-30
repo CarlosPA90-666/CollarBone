@@ -86,7 +86,6 @@ var pepe = new Vue({
           // eslint-disable-next-line
           console.log(error.request);
         })
-      this.clear()
     }
   },
   created: function () {
