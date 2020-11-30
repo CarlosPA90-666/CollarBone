@@ -77,7 +77,7 @@ var pepe = new Vue({
     },
     eliminar: function () {
       axios.delete(url + '/BorrarC', { headers: {}, data: { supC: this.supC } })
-      console.log(this.supC)
+      // console.log(this.supC)
         .then((response) => {
           console.log(response)
           this.peticion()
