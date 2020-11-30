@@ -149,23 +149,24 @@
             <h5 class="card-title">Camisetas En Exposición:</h5>
                 <div id="app">
                         <select id="nomscam ">
-                                <option value v-for="c in datos">{{c.nombre}}</option>
+                                <option value v-for="c in datos" v-model="nombreT">{{c.nombre}}</option>
                         </select>
                         <div id="hideme">
                                 <form action="/cgi-bin/Collarbone_BK/app.py" method="POST">
-                                        <script>
-                                                /* Para obtener el texto del select */
-                                                var combo = document.getElementById("nomscam");
-                                                var selected = combo.options[combo.selectedIndex].text;
-                                                alert(selected)
-                                                document.getElementById('nombreC').value = selected;
-                                        </script>
                                 <input type="text" id="nombreC" name="nombreC" class="form-control" autocomplete="off" placeholder="..." aria-label="camiseta" aria-describedby="basic-addon1">
                                 <div id="box_btn">
-                                        <input type="submit" id="btn Buscarcam" value="Buscar"  class="btn btn-primary" v-on:click="p(selected)" >
+                                        <input type="submit" id="btn Buscarcam" value="Buscar"  class="btn btn-primary" v-on:click="p()" >
                                 </div>
                                 </form>
                         </div>
+                        <script>
+                                /* Para obtener el texto del select */
+                                var combo = document.getElementById("nomscam");
+                                var selected = combo.options[combo.selectedIndex].text;
+                                alert(selected)
+                                document.getElementById('nombreC').value = selected;
+                                document.getElementById('nombreC').style.display= "none";
+                        </script>
                 </div>
                 <br>
             <form action="Python/usrbd.py" method="GET">
