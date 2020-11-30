@@ -195,6 +195,17 @@
         </div>
 
 <!------------------------------------------------ELIMINAR CAMISETA------------------------------------------------>
-	<script type="text/javascript" src="js/myjs.js"></script>
+        <div id="app" style="background-color: aliceblue;">
+                <h4>Camisetas en Carrito</h4>
+                <ul>
+                <li v-for="c in datos"><b>{{c.nombre}}</b>
+                        <ul>Tallas: {{c.tallas}}</ul>
+                        <ul>Precio: ${{c.cantidad}}</ul>
+                        <ul>Precio: ${{c.precio}}</ul>
+                        <ul>Precio: ${{c.url}}</ul>
+                </li>
+                </ul>
+        </div>
+        <script type="text/javascript" src="js/myjs.js"></script>
         <script src="js/axios.js" type="text/javascript"></script>
 </body>
