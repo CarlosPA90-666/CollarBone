@@ -142,14 +142,14 @@
 <!------------------------------------------------MODIFICAR CAMISETA------------------------------------------------>
 
 <!------------------------------------------------BUSCAR CAMISETA------------------------------------------------>
-	 <div id="BuscarCamiseta">
+	<div id="BuscarCamiseta">
                 <div class="card">
         <h5 class="card-header">Buscar Camiseta</h5>
         <div class="card-body">
             <h5 class="card-title">Camisetas En Exposición:</h5>
-                <div>
-                <select id="nomscam">
-                        <option value>Nombres</option>
+                <div id="app">
+                <select id="nomscam ">
+                        <option value v-for="c in datos">{{c.nombre}}</option>
                 </select>
                 <button id="Buscarcam">Buscar</button>
                 </div>
