@@ -148,7 +148,7 @@
         <div class="card-body">
             <h5 class="card-title">Camisetas En Exposición:</h5>
                 <div id="app">
-                        <select id="nomscam2">
+                        <select id="nomscam">
                                 <option v-for="c in datos">{{c.nombre}}</option>
                         </select>
                         <div id="hideme">
@@ -162,10 +162,10 @@
                         <script>
                                 /* Para obtener el texto del select */
                                 function x () {
-                                        var combo = document.getElementById("nomscam2");
-                                        var selected = combo.options[combo.selectedIndex].text;
-                                        document.getElementById('nombreC').value = selected;
-                                        alert(selected)
+                                        // var combo = document.getElementById("nomscam2");
+                                        // var selected = combo.options[combo.selectedIndex].text;
+                                        // document.getElementById('nombreC').value = selected;
+                                        alert(document.getElementById("nomscam").selectedIndex.text) ;
                                 }
                                 document.getElementById('nombreC').style.display= "none";
                         </script>
