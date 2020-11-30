@@ -64,7 +64,7 @@ var pepe = new Vue({
   data: {
     datos: [],
     unC: [],
-    supC: 'vacio'
+    supC: document.getElementById('borrarC').value
   },
   methods: {
     peticion: function () {
