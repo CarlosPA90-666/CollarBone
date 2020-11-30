@@ -93,10 +93,4 @@ var pepe = new Vue({
   }
 })
 
-function y () {
-  combo = document.getElementById('nomscam2')
-  selected = combo.options[combo.selectedIndex].text
-  document.getElementById('borrarC').value = selected
-  console.log(selected)
-  console.log(app.datos)
-}
+
