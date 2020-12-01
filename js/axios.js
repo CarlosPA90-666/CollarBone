@@ -73,6 +73,7 @@ var pepe = new Vue({
         .catch(error => console.error(error))
     },
     eliminar: function () {
+      console.log(this.supC)
       axios.delete(url + '/BorrarC', { headers: {}, data: { supC: this.supC } })
         .then((response) => {
           console.log(response)
@@ -82,8 +83,5 @@ var pepe = new Vue({
           console.log(error.request);
         })
     }
-  },
-  created: function () {
-    this.peticion()
   }
 })
