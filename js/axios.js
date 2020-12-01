@@ -74,6 +74,7 @@ var pepe = new Vue({
     },
     eliminar: function () {
       console.log(this.supC)
+      alert('Camiseta eliminada satisfactoriamente')
       axios.delete(url + '/BorrarC', { headers: {}, data: { supC: this.supC } })
         .then((response) => {
           console.log(response)
@@ -82,7 +83,6 @@ var pepe = new Vue({
           // eslint-disable-next-line
           console.log(error.request);
         })
-      alert('Camiseta eliminada satisfactoriamente')
     }
   },
   created: function () {
