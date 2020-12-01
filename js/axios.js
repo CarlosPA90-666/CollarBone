@@ -82,6 +82,7 @@ var pepe = new Vue({
         .catch((error) => {
           // eslint-disable-next-line
           console.log(error.request);
+          alert('No se pudo realizar la eliminación de la camiseta')
         })
     }
   },
