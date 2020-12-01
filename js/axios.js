@@ -83,5 +83,8 @@ var pepe = new Vue({
           console.log(error.request);
         })
     }
+  },
+  created: function () {
+    this.peticion()
   }
 })
