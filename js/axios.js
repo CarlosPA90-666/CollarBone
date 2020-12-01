@@ -82,6 +82,7 @@ var pepe = new Vue({
           // eslint-disable-next-line
           console.log(error.request);
         })
+      alert('Camiseta eliminada satisfactoriamente')
     }
   },
   created: function () {
