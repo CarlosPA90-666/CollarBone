@@ -182,13 +182,13 @@
                                 <h5 class="card-title">Camiseta A Eliminar:</h5>
                                         <div id="pepe">
                                                 <div>
-                                                        <select id="nomscam2" onclick="y()">
+                                                        <select id="nomscam2"  onclick="y()">
                                                                 <option v-for="c in datos">{{c.nombre}}</option>
                                                         </select>
                                                 </div>
                                                 <br>
                                                 <form>
-                                                        <input  v-model="supC" type="text" id="borrarC" name="borrarC" class="form-control" autocomplete="off" placeholder="..." aria-label="camiseta" aria-describedby="basic-addon1">
+                                                        <input type="text" id="borrarC" name="borrarC" class="form-control" autocomplete="off" placeholder="..." aria-label="camiseta" aria-describedby="basic-addon1">
                                                         <input type="submit" value="Eliminar"  class="btn btn-primary" id="btnelicam" v-on:click="eliminar">
                                                 </form>
                                                 <script>
@@ -198,6 +198,8 @@
                                                                 document.getElementById('borrarC').value = selected
                                                                 console.log(selected)
                                                                 console.log(app.datos)
+                                                                pepe.supC = selected
+                                                                // alert(pepe.supC)
                                                         }
                                                 </script>
                                         </div>

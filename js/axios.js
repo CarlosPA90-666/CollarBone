@@ -1,7 +1,5 @@
 var url = 'http://ec2-3-92-45-110.compute-1.amazonaws.com:5000'
 var axios
-var datos
-var unC
 var combo
 var selected
 var app = new Vue({
@@ -63,8 +61,7 @@ var pepe = new Vue({
   el: '#pepe',
   data: {
     datos: [],
-    unC: [],
-    supC: ' '
+    supC: ''
   },
   methods: {
     peticion: function () {
@@ -80,7 +77,6 @@ var pepe = new Vue({
       axios.delete(url + '/BorrarC', { headers: {}, data: { supC: this.supC } })
         .then((response) => {
           console.log(response)
-          this.peticion()
         })
         .catch((error) => {
           // eslint-disable-next-line
