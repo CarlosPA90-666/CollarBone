@@ -80,7 +80,7 @@ var pepe = new Vue({
           console.log(response)
         })
         .catch((error) => {
-          console.log(error.request);
+          console.log(error.request)
           alert('No se pudo realizar la eliminación de la camiseta')
         })
     }
