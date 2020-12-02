@@ -1,4 +1,4 @@
-var url = 'http://ec2-3-92-45-110.compute-1.amazonaws.com:5000'
+var url = 'http://ec2-3-93-172-222.compute-1.amazonaws.com:5000'
 var axios
 var combo
 var selected
