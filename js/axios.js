@@ -74,6 +74,7 @@ var pepe = new Vue({
     },
     eliminar: function () {
       console.log(this.supC)
+      //Se envia el nombre de la camiseta para eliminarla desde Flask
       alert('La camiseta ' + this.supC + ' ha sido eliminada satisfactoriamente')
       axios.delete(url + '/BorrarC', { headers: {}, data: { supC: this.supC } })
         .then((response) => {
@@ -89,3 +90,4 @@ var pepe = new Vue({
     this.peticion()
   }
 })
+// Codigo funcional
